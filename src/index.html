@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieDB</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="scripts.js" defer></script>
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        .text-underline-hover{
+            text-decoration: none;
+        }
+        .text-underline-hover:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="searchPage" class="d-none">
+        <input type="text" name="" id="searchInput" class="w-100 p-3 position-fixed top-0 start-0" placeholder="Digite sua pesquisa..." style="z-index: 1;" onkeypress="submitKeyPress(event)">
+        <div class="bg-black p-3 w-100 h-100 position-fixed top-0 start-0 opacity-50" onclick="dNone()"></div>
+    </div>
+
+    <header class="p-3 text-bg-dark d-flex justify-content-between align-items-center">
+        <a href="index.html" class="text-decoration-none text-light">
+            <h1 class="display-3">MovieDB</h1>
+        </a>
+        <asside>
+            <button class="btn btn-dark" onclick="dBlock()"><i class="bi bi-search fs-1"></i></button>
+            <a class="btn btn-dark" onclick="indisponivel()"><i class="bi bi-person fs-1"></i></a>
+        </asside>
+    </header>
+
+    <img src="https://picsum.photos/1500/1200" alt="Imagem aleatória do Picsum Photos" style="width: 100%;">
+
+    <div class="container-fluid mt-3">
+        <a href="" class="text-dark text-underline-hover" onclick="indisponivel()"">
+            <h2 class="display-5">Filmes em alta</h2>
+        </a>
+        <div class="d-flex gap-3 overflow-scroll mt-3">
+            <img src="https://picsum.photos/200/250?random=1" alt="Imagem aleatória do Picsum Photos">
+            <img src="https://picsum.photos/200/250?random=1" alt="Imagem aleatória do Picsum Photos">
+            <img src="https://picsum.photos/200/250?random=1" alt="Imagem aleatória do Picsum Photos">
+            <img src="https://picsum.photos/200/250?random=1" alt="Imagem aleatória do Picsum Photos">
+            <img src="https://picsum.photos/200/250?random=1" alt="Imagem aleatória do Picsum Photos">
+            <img src="https://picsum.photos/200/250?random=1" alt="Imagem aleatória do Picsum Photos">
+            <img src="https://picsum.photos/200/250?random=1" alt="Imagem aleatória do Picsum Photos">
+            <img src="https://picsum.photos/200/250?random=1" alt="Imagem aleatória do Picsum Photos">
+            <img src="https://picsum.photos/200/250?random=1" alt="Imagem aleatória do Picsum Photos">
+            <img src="https://picsum.photos/200/250?random=1" alt="Imagem aleatória do Picsum Photos"> 
+        </div>
+    </div>
+
+    <div class="container-fluid mt-3">
+        <a href="" class="text-dark text-underline-hover" onclick="indisponivel()">
+            <h2 class="display-5">Séries em alta</h2>
+        </a>
+        <div class="d-flex gap-3 overflow-scroll mt-3">
+            <img src="https://picsum.photos/200/250" alt="Imagem aleatória do Picsum Photos">
+            <img src="https://picsum.photos/200/250" alt="Imagem aleatória do Picsum Photos">
+            <img src="https://picsum.photos/200/250" alt="Imagem aleatória do Picsum Photos">
+            <img src="https://picsum.photos/200/250" alt="Imagem aleatória do Picsum Photos">
+            <img src="https://picsum.photos/200/250" alt="Imagem aleatória do Picsum Photos">
+            <img src="https://picsum.photos/200/250" alt="Imagem aleatória do Picsum Photos">
+            <img src="https://picsum.photos/200/250" alt="Imagem aleatória do Picsum Photos">
+            <img src="https://picsum.photos/200/250" alt="Imagem aleatória do Picsum Photos">
+            <img src="https://picsum.photos/200/250" alt="Imagem aleatória do Picsum Photos">
+            <img src="https://picsum.photos/200/250" alt="Imagem aleatória do Picsum Photos"> 
+        </div>
+    </div>
+
+    <footer class="w-100 text-bg-dark mt-5 p-4"></footer>
+
+</body>
+</html>
