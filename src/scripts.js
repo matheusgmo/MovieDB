@@ -38,7 +38,7 @@ const apiConsumption = () => {
     .then(data => {
         const filmes = data.results
         
-        getFilmPoster('poster', 0, 300)
+        getFilmPoster('poster', 0, 400)
 
         let titulo = document.getElementById('titulo')
         titulo.innerText = filmes[0].original_title
