@@ -22,6 +22,7 @@
     </style>
 </head>
 <body>
+
     <div id="searchPage" class="d-none">
         <input type="text" name="" id="searchInput" class="w-100 p-3 position-fixed top-0 start-0" placeholder="Digite sua pesquisa..." style="z-index: 1;" onkeypress="submitKeyPress(event)">
         <div class="bg-black p-3 w-100 h-100 position-fixed top-0 start-0 opacity-50" onclick="dNone()"></div>
@@ -36,42 +37,40 @@
             <a class="btn btn-dark" onclick="indisponivel()"><i class="bi bi-person fs-1"></i></a>
         </asside>
     </header>
+<div id="popular_film" class="d-flex bg-secondary bg-opacity-25">
+        <img id="poster" alt="Capa do filme">
+        <div id="film_info" class="p-3 d-flex flex-column">
+            <h2 id="titulo" class="display-5 mb-3"></h2>
+            <p id="sinopse"></p>
+            <div id="vote">
+                <i class="bi bi-star-half"></i>
+                <span id="vote_average"></span>
+                <span id="vote_count"></span>
+            </div>
+            <button class="btn btn-danger mt-3 p-3 pe-5 ps-5 align-self-end" onclick="indisponivel()">Saiba mais</button>
+        </div>
+</div>
 
-    <img src="https://picsum.photos/1500/1200" alt="Imagem aleatória do Picsum Photos" style="width: 100%;">
-
-    <div class="container-fluid mt-3">
+    <div class="container-fluid mt-3" id="filmesEmAlta">
         <a href="" class="text-dark text-underline-hover" onclick="indisponivel()"">
             <h2 class="display-5">Filmes em alta</h2>
         </a>
         <div class="d-flex gap-3 overflow-scroll mt-3">
-            <img src="https://picsum.photos/200/250?random=1" alt="Imagem aleatória do Picsum Photos">
-            <img src="https://picsum.photos/200/250?random=1" alt="Imagem aleatória do Picsum Photos">
-            <img src="https://picsum.photos/200/250?random=1" alt="Imagem aleatória do Picsum Photos">
-            <img src="https://picsum.photos/200/250?random=1" alt="Imagem aleatória do Picsum Photos">
-            <img src="https://picsum.photos/200/250?random=1" alt="Imagem aleatória do Picsum Photos">
-            <img src="https://picsum.photos/200/250?random=1" alt="Imagem aleatória do Picsum Photos">
-            <img src="https://picsum.photos/200/250?random=1" alt="Imagem aleatória do Picsum Photos">
-            <img src="https://picsum.photos/200/250?random=1" alt="Imagem aleatória do Picsum Photos">
-            <img src="https://picsum.photos/200/250?random=1" alt="Imagem aleatória do Picsum Photos">
-            <img src="https://picsum.photos/200/250?random=1" alt="Imagem aleatória do Picsum Photos"> 
-        </div>
-    </div>
+            <img id="filmeEmAlta0" alt="Filme em alta" onclick="indisponivel()" style="cursor: pointer;"">
+            <img id="filmeEmAlta1" alt="Filme em alta" onclick="indisponivel()" style="cursor: pointer;"">
+            <img id="filmeEmAlta2" alt="Filme em alta" onclick="indisponivel()" style="cursor: pointer;"">
+            <img id="filmeEmAlta3" alt="Filme em alta" onclick="indisponivel()" style="cursor: pointer;"">
+            <img id="filmeEmAlta4" alt="Filme em alta" onclick="indisponivel()" style="cursor: pointer;"">
+            <img id="filmeEmAlta5" alt="Filme em alta" onclick="indisponivel()" style="cursor: pointer;"">
+            <img id="filmeEmAlta6" alt="Filme em alta" onclick="indisponivel()" style="cursor: pointer;"">
+            <img id="filmeEmAlta7" alt="Filme em alta" onclick="indisponivel()" style="cursor: pointer;"">
+            <img id="filmeEmAlta8" alt="Filme em alta" onclick="indisponivel()" style="cursor: pointer;"">
+            <img id="filmeEmAlta9" alt="Filme em alta" onclick="indisponivel()" style="cursor: pointer;"">
 
-    <div class="container-fluid mt-3">
-        <a href="" class="text-dark text-underline-hover" onclick="indisponivel()">
-            <h2 class="display-5">Séries em alta</h2>
-        </a>
-        <div class="d-flex gap-3 overflow-scroll mt-3">
-            <img src="https://picsum.photos/200/250" alt="Imagem aleatória do Picsum Photos">
-            <img src="https://picsum.photos/200/250" alt="Imagem aleatória do Picsum Photos">
-            <img src="https://picsum.photos/200/250" alt="Imagem aleatória do Picsum Photos">
-            <img src="https://picsum.photos/200/250" alt="Imagem aleatória do Picsum Photos">
-            <img src="https://picsum.photos/200/250" alt="Imagem aleatória do Picsum Photos">
-            <img src="https://picsum.photos/200/250" alt="Imagem aleatória do Picsum Photos">
-            <img src="https://picsum.photos/200/250" alt="Imagem aleatória do Picsum Photos">
-            <img src="https://picsum.photos/200/250" alt="Imagem aleatória do Picsum Photos">
-            <img src="https://picsum.photos/200/250" alt="Imagem aleatória do Picsum Photos">
-            <img src="https://picsum.photos/200/250" alt="Imagem aleatória do Picsum Photos"> 
+            <a href="" id="see_more" class="text-bg-dark d-flex align-items-center justify-content-center text-light" onclick="indisponivel()">
+                <i class="bi bi-plus fs-1"></i>
+            </a>
+
         </div>
     </div>
 
