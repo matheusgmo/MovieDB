@@ -5,8 +5,8 @@ const id = window.location.hash.slice(1)
 
 getFilmList(`movie/${id}`)
 .then(data => {
-    const detalhes = document.getElementById('detalhes');
-    detalhes.innerHTML = `
+    const main = document.getElementById('main');
+    main.innerHTML = `
     <img src="${getImageUrl([data], 0, 400, 'backdrop')}" alt="${data.title || "Imagem indisponível"}" style="width: 100%">
     <div class="container-fluid">
         <h1 class="mt-3 mb-3 display-4">${data.title || "Título não encontrado"}</h1>
@@ -18,8 +18,8 @@ getFilmList(`movie/${id}`)
 
 getFilmList(`tv/${id}`)
 .then(data => {
-    const detalhes = document.getElementById('detalhes');
-    detalhes.innerHTML = `
+    const main = document.getElementById('main');
+    main.innerHTML = `
     <img src="${getImageUrl([data], 0, 400, 'backdrop')}" alt="${data.title || "Imagem indisponível"}" style="width: 100%">
     <div class="container-fluid">
         <h1 class="mt-3 mb-3 display-4">${data.name || "Título não encontrado"}</h1>

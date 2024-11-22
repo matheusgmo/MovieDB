@@ -6,14 +6,9 @@
     <title>MovieDB</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
-    <script src="scripts/home.js" defer type="module"></script>
+    <script src="scripts/searchPage.js" defer type="module"></script>
     <script src="scripts/search.js" defer type="module"></script>
     <script src="scripts/utils.js" defer type="module"></script>
-    <style>
-        ::-webkit-scrollbar {
-            display: none;
-        }
-    </style>
 </head>
 <body>
 
@@ -45,8 +40,22 @@
 
     </header>
 
-    <main id="main" class="d-none">
-    </main>
+    <main class="container-fluid mt-3 mb-3" id="main"></main>
+
+    <!-- <div class="d-flex justify-content-center p-3 gap-1">
+        <button class="btn btn-primary">
+            <i class="bi bi-arrow-left"></i>
+        </button>
+        <button class="btn btn-primary">1</button>
+        <button class="btn btn-primary">2</button>
+        <button class="btn btn-primary">3</button>
+        <button class="btn btn-primary">4</button>
+        <button class="btn btn-primary">5</button>
+        <button class="btn btn-primary">...</button>
+        <button class="btn btn-primary">
+            <i class="bi bi-arrow-right"></i>
+        </button>
+    </div> -->
 
     <div class="d-flex justify-content-center mt-3" id="loading">
         <div class="spinner-border" role="status">

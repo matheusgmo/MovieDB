@@ -32,15 +32,8 @@ const inputSubmit = (event) => {
     if (event.key === "Enter" && !searchInput.value){
         alert('Insira uma pesquisa')
     }else {
-        // searchForm.action = `search.html#${searchInput.value}`
-        indisponivel()
+        searchForm.action = `search.html#${searchInput.value}`
     }
 }
 
 searchForm.addEventListener('submit', inputSubmit)
-
-
-export const indisponivel = () => {
-    event.preventDefault()
-    alert('Essa função ainda não está disponível :(')
-}
