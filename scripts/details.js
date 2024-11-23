@@ -1,5 +1,5 @@
 import { getFilmList, getImageUrl } from './api.js'
-import { indisponivel } from './search.js';
+import { indisponivel } from './utils.js';
 
 const id = window.location.hash.slice(1)
 

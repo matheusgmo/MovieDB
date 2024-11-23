@@ -1,5 +1,3 @@
-import { getImageUrl } from "./api.js"
-
 const hash = window.location.hash.slice(1)
 
 fetch(`https://api.themoviedb.org/3/search/multi?query=${hash}&api_key=f1d01bea3ef891d53eaf4b9c2e492281`)
