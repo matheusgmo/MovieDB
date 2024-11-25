@@ -3,20 +3,6 @@ import { indisponivel } from './utils.js'
 
 getFilmList('movie/popular')
 .then(data => {
-
-    main.innerHTML = `
-    <a id="poster"></a>
-
-        <div class="container-fluid mt-3 mb-3">
-
-            <h2 class="display-5">Popular movies</h2>
-            <div id="filmesEmAlta" class="d-flex gap-3 overflow-scroll mt-3 mb-3"></div>
-
-            <h2 class="display-5">Popular series</h2>
-            <div id="seriesEmAlta" class="d-flex gap-3 overflow-scroll mt-3"></div>
-        </div>
-    `
-
     const poster = document.getElementById('poster')
     poster.innerHTML += `<img 
     src='${getImageUrl(data.results, 0, 400)}' 
