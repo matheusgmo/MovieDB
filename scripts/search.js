@@ -20,19 +20,18 @@ const dNoneSearch = () => {
 
 searchOff.addEventListener('click', dNoneSearch)
 
-export const submitKeyPress = (event) => {
-    if (event.key === "Enter" && !searchInput.value){
-        alert('Insira uma pesquisa')
-    }else {
-        window.location.href = `pesquisa.html#${searchInput.value}`
-    }
-}
-
 const inputSubmit = (event) => {
+    event.preventDefault()
+
     if (event.key === "Enter" && !searchInput.value){
         alert('Insira uma pesquisa')
     }else {
-        searchForm.action = `search.html#${searchInput.value}`
+        if(window.location.href.includes('search.html')){
+            window.location = `#${searchInput.value}`
+            window.location.reload()
+        }else{
+            window.location = `search.html#${searchInput.value}`
+        }
     }
 }
 
